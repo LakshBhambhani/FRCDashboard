@@ -68,15 +68,16 @@ header {
 }
 #camera {
     padding: 0;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: 0vh;
     left: 10;
-    width: 50vw;
-    height: 80vh;
+    width: 50%;
+    height: 80%;
+    object-fit: fill;
     overflow: hidden;
     background-color: #333;
-    /* You'll need to mess with this a bit to get your camera to work. Replace the url with a live-updating image feed from your camera. Using other camera streaming systems will require some tweaking. */
-    background-image: url(ui.cameraURL);
+    background-size: cover;
+    background-image: url(ui.camera.src);
 }
 article {
     top: 0;
@@ -133,13 +134,58 @@ body.login #login {
   font-size: 12pt;
 }
 #navx {
-  top: 0.2vh;
-  right: 0.4vw;
-  color: green;
+  position: absolute;
+  transform: translate(70vw);
 }
-#navx-name {
-  text-align: center;
+#arm {
+  position: absolute;
+  transform: translate(81vw);
 }
-#navx-arm {
+#turret {
+  position: absolute;
+  transform: translate(85vw);
+}
+#field-map {
+  position: absolute;
+  transform: translate(55vw, 40vh);
+}
+#status-lights {
+  position: absolute;
+  transform: translate(55vw, 25vh);
+}
+.bottom-tick {
+  transform-origin: top center;
+  transform: rotate(180deg);
+}
+.right-tick {
+  transform-origin: left center;
+  transform: rotate(180deg);
+}
+.needle {
   transform-origin: bottom center;
+}
+.right-rocket {
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+#left-cargo-1 {
+  transform: translate(-40px);
+}
+#left-cargo-2 {
+  transform: translate(-40px);
+}
+#left-cargo-3 {
+  transform: translate(-40px);
+}
+#left-cargo-4 {
+  transform: translate(-30px);
+}
+#right-cargo-1 {
+  transform: translate(10px);
+}
+#right-cargo-2 {
+  transform: translate(10px);
+}
+#right-cargo-3 {
+  transform: translate(10px);
 }
