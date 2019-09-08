@@ -1,7 +1,8 @@
 // Set a global alias for the camera and related elements.
 ui.camera = {
 	viewer: document.getElementById('camera'),
-	src: 'http://' + address.value + ':80/?action=stream'
+	src: 'http://192.168.4.1:8081'	
+	//src: 'http://' + address.value + ':80/?action=stream'
 };
 
 ui.multiCamSRC.innerHTML = ui.camera.src;
