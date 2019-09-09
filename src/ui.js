@@ -1,16 +1,18 @@
 // Define UI elements
 var ui = {
-    timer: document.getElementById('timer'),
-    robotState: document.getElementById('robot-state'),
-    multiCamSRC: document.getElementById('multicam-src'),
-    navx: {
-      arm: document.getElementById('navx-arm'),
-      number: document.getElementById('navx-number')
-    },
-    turret: {
-      arm: document.getElementById('turret-arm'),
-      number: document.getElementById('turret-number')
-    }
+  multiCamSRC: document.getElementById('multicam-src'),
+  multiCamSRC: document.getElementById('multicam-src')
+    // timer: document.getElementById('timer'),
+    // robotState: document.getElementById('robot-state'),
+    // multiCamSRC: document.getElementById('multicam-src'),
+    // navx: {
+    //   arm: document.getElementById('navx-arm'),
+    //   number: document.getElementById('navx-number')
+    // },
+    // turret: {
+    //   arm: document.getElementById('turret-arm'),
+    //   number: document.getElementById('turret-number')
+    // }
 };
 
 // naming convention starts from the midfield line and counts towards the alliance station
