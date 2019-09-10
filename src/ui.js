@@ -1,7 +1,6 @@
 // Define UI elements
 var ui = {
-  multiCamSRC: document.getElementById('multicam-src'),
-  multiCamSRC: document.getElementById('multicam-src')
+    multiCamSRC: document.getElementById('multicam-src'),
     // timer: document.getElementById('timer'),
     // robotState: document.getElementById('robot-state'),
     // multiCamSRC: document.getElementById('multicam-src'),
